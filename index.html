@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+
 <body>
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+
 <h1 style="color:DarkGreen;text-align:center"> Parth Kumar's Research Website </h1>
 <p> I am a Physics PhD candidate at the University of Arizona working on Nonequilibrium Quantum Dynamics, expecting to graduate in Spring 2024. I am actively seeking postdoctoral positions broadly in the field of Open Quantum Systems theory.</p>
 <p> The core of my doctoral work addresses the question of how to partition the energy and entropy of time-dependent open quantum systems in a thermodynamically consistent manner--a problem which has attracted much debate and discussion in recent years. Additionally, I have worked on quantum information engines, topological effects and fluctuation theorems in open quantum systems during the course of my research. </p>
 <p> I am advised by Prof. Charles A. Stafford.</p>
 <p>You can find my CV by clicking <a href="https://parthkumar95.github.io/ParthKumar_CV.pdf" target="_blank">here</a>, and a list of my preprints and publications by clicking <a href="https://scholar.google.com/citations?user=K3zRr70AAAAJ&hl=en&oi=sra" target="_blank">here</a>. </p> 
 <p>You can contact me by email at:  parthk [at] arizona [dot] edu </p>
+
+</div> 
+  
 </body>
 </html>
